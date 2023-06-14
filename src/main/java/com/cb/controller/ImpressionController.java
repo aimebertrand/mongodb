@@ -1,4 +1,4 @@
-package com.cb.controller;
+/*package com.cb.controller;
 
 import com.cb.model.Impression;
 import com.cb.model.Key;
@@ -41,3 +41,4 @@ public class ImpressionController {
         return impressionRepository.getImpressionBySiteId(siteId).orElseThrow(() -> new NoSuchElementException());
     }
 }
+*/

@@ -1,4 +1,4 @@
-package com.cb.model;
+/*package com.cb.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,3 +11,4 @@ public class Key {
     private long clientId;
     private long campaignId;
 }
+*/

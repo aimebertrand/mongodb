@@ -1,4 +1,4 @@
-package com.cb.repository;
+/*kage com.cb.repository;
 
 import com.cb.model.Impression;
 import com.cb.model.Key;
@@ -11,3 +11,4 @@ public interface ImpressionRepository extends MongoRepository<Impression, Key> {
     @Query("{siteId : ?0}")
     Optional<Impression> getImpressionBySiteId(long siteId);
 }
+*/

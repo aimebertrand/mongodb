@@ -1,4 +1,4 @@
-package com.cb.controller;
+/*package com.cb.controller;
 
 import com.cb.model.Impression;
 import com.cb.model.Key;
@@ -29,3 +29,4 @@ public class ImpressionControllerMongoTemplate {
         return mongoTemplate.save(impression);
     }
 }
+*/
