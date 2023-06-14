@@ -1,0 +1,14 @@
+#Local MongoDB config
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: analytics_db
+  # SWAGGER
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v1/api-docs
+
