@@ -24,10 +24,16 @@ public class MediaController {
     public Iterable<Media> createBulk(@RequestBody List<Media> mediaList) {
         return mediaRepository.saveAll(mediaList);
     }
-    @GetMapping("/{id}")
-    public Media read(@PathVariable String id) {
-        return mediaRepository.findById(Integer.valueOf(id)).orElseThrow(NoSuchElementException::new);
+
+    @GetMapping("/")
+    public Iterable<Media> readAll() {
+        return mediaRepository.findAll();
     }
+
+        @GetMapping("/{id}")
+        public Media read(@PathVariable String id) {
+            return mediaRepository.findById(id).orElseThrow(NoSuchElementException::new);
+        }
 
     @PutMapping("/")
     public Media update(@RequestBody Media media) {
@@ -36,6 +42,6 @@ public class MediaController {
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable String id) {
-        mediaRepository.deleteById(Integer.valueOf(id));
+        mediaRepository.deleteById(id);
     }
 }
